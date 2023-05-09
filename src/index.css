@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navigation-items a{
+   width:100%;
+   display: block;
+   border-bottom:2px solid lightseagreen;
+   padding-top:7px;
+
+}
+.active{
+   background-color: lightseagreen;
+   color:#fff;
+
+}

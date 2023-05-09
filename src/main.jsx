@@ -4,6 +4,9 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import Users from "./components/Users.jsx";
+
+import AddNewUser from "./components/AddNewUser.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,31 +15,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h2>This is Default Route</h2>,
+        element: <Users></Users>,
       },
       {
-        path: "login",
-        element: <h2>This is Login Route</h2>,
+        path: "users",
+        element: <Users></Users>,
+      },
+      {
+        path: "add-user",
+        element: <AddNewUser></AddNewUser>,
       },
       {
         path: "register",
         element: <h2>This is Register Route</h2>,
-      },
-      {
-        path: "instructors/all",
-        element: <h2>All Instructors are Here</h2>,
-      },
-      {
-        path: "instructors/:id",
-        element: <h2>Single Instructors are Here</h2>,
-      },
-      {
-        path: "instructors/add",
-        element: <h2>Instructors Can be Added From Here</h2>,
-      },
-      {
-        path: "instructors/update/:id",
-        element: <h2>Instructors information can be Updated from There</h2>,
       },
     ],
   },
