@@ -16,6 +16,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Users></Users>,
+        loader: () => fetch("https://book-bd-admin-server.vercel.app/users"),
       },
       {
         path: "users",
